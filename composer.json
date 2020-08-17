@@ -1,0 +1,20 @@
+{
+    "name": "lrq/qrcode",
+    "description": "生成及美化二维码",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lrquan",
+            "email": "941478567@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ext-gd": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lrq\\qrcode\\": "src"
+        }
+    }
+}
