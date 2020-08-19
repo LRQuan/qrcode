@@ -1,9 +1,15 @@
 二维码生成与美化工具
 
+```shell script
+composer require lrq/qrcode:~1.0.0
+```
+
 如果只是想生成一个默认的二维码
 ```php
+use lrq\qrcode\QrcodeMain;
+
 $str = 'test'; //初始化传入需要转化为二维码的字符串
-$qrcode = new \tools\QrCodeTools($str); //初始化传入需要转化为二维码的字符串
+$qrcode = new QrcodeMain($str); //初始化传入需要转化为二维码的字符串
 $qrcode->execute();
 $qrcode->png('qr1.png'); //保存图片
 echo $qrcode->gif(); //输出<img /> 标签

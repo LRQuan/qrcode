@@ -15,7 +15,7 @@ $qrcode
 $qrcode->png('qr1.png');
 $png1 = $qrcode->gif();
 $qrcode
-    ->setOuterFrame(1)
+    ->setOuterFrame(10)
     ->setMergeLevel($qrcode::MERGE_LEVEL_NO) //合并点
     ->setPixelPerPoint(5) //设置每个点的像素
 
@@ -32,7 +32,7 @@ $png2 = $qrcode->png();
 $qrcode->setInterval(2) //设置点间空隙
 
     ->setDecal('test.png') //设置中间的贴图
-    ->setDecalSize(0.1) //设置中间贴图的大小
+    ->setDecalSize(0.2) //设置中间贴图的大小
 
     ->setLocator($qrcode::LOCATOR_TYPE_DIAMOND) //设置定位点样式
     ->setLocatorColor(140,100,46) //设置定位点颜色
