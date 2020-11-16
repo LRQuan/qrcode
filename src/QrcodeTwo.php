@@ -26,12 +26,12 @@ class QrcodeTwo
     /**
      * @var int 缝隙宽度
      */
-    private $gapWidth = 10;
+    private $gapWidth = 1;
 
     /**
      * @var int 点宽度
      */
-    private $pointWidth = 1;
+    private $pointWidth = 10;
 
     private $borderWidth = 0;
 

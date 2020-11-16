@@ -10,7 +10,8 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "ext-gd": "*"
+        "ext-gd": "*",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {

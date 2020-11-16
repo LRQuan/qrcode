@@ -65,3 +65,5 @@ echo $png4;
 echo '<br/>';
 $qrcode->print($qrcode->getRawFrame()); //打印矩阵数据
 exit();
+
+

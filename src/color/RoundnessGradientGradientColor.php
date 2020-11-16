@@ -16,8 +16,8 @@ class RoundnessGradientGradientColor extends BaseGradientColor implements ColorI
 
     public function __construct($width, $type, $startColor, $endColor, $center=[])
     {
-        $this->a = $center['x']?? $width/2;
-        $this->b = $center['y']?? $width/2;
+        $this->a = $center['x']?? round($width/2);
+        $this->b = $center['y']?? round($width/2);
         parent::__construct($width, $type, $startColor, $endColor);
     }
 

@@ -7,6 +7,7 @@ namespace lrq\qrcode\front;
 use lrq\qrcode\color\BaseGradientColor;
 use lrq\qrcode\color\LineGradientColor;
 use lrq\qrcode\color\RoundnessGradientGradientColor;
+use lrq\qrcode\tools;
 
 class BaseFrontBuilder implements FrontBuilder
 {
@@ -51,6 +52,7 @@ class BaseFrontBuilder implements FrontBuilder
             $x += $width;
         }
         imagecolortransparent($tmpImage,0);
+        tools::echoImage($tmpImage);
         imagecopyresized($image, $tmpImage,0,0,0,0,$this->drawW,$this->drawW,$this->drawW,$this->drawW);
         imagedestroy($tmpImage);
     }
@@ -76,7 +78,7 @@ class BaseFrontBuilder implements FrontBuilder
 
     protected function createPoint()
     {
-        $point = imagecreatetruecolor($this->pointWidth,$this->pointWidth);
+        $point = imagecreatetruecolor($this->pointWidth, $this->pointWidth);
         imagefilledrectangle($point,0,0,$this->pointWidth,$this->pointWidth,-1);
         $this->point = $point;
     }
